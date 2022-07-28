@@ -1,0 +1,529 @@
+/* common css part */
+:root {
+    --abril: 'Abril Fatface', cursive;
+    --open: 'Open Sans', sans-serif;
+    --ubuntu: 'Ubuntu', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.container2 {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.row,
+.flex_wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* common css part */
+
+/* header css part */
+#header .top_header {
+    background: #0f2f44;
+    color: #fefefe;
+    font-family: var(--ubuntu);
+    padding: 15.5px 0px
+}
+
+#header .top_header .row {
+    justify-content: space-between;
+}
+
+#header nav .row {
+    align-items: center;
+}
+
+#header nav .logo {
+    width: 30%;
+}
+
+#header nav .menu {
+    width: 70%;
+    justify-content: flex-end;
+}
+
+#header nav .menu ul li a {
+    text-transform: capitalize;
+    font-family: var(--ubuntu);
+    font-weight: 500;
+    display: inline-block;
+    padding: 39px 19px;
+    transition: 0.3s linear;
+}
+
+#header nav .menu ul li:hover a,
+#header nav .menu ul li a.active,
+#header nav .menu .icon_in_nav li:hover i {
+    background-color: #fff9e6;
+    color: #ffc712;
+}
+
+#header nav .menu .icon_in_nav li {
+    margin: 0px 10px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #f3f3f3;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    color: #999999;
+    font-size: 10px;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+/* header css part */
+
+/* banner section css part */
+#banner {
+    background: #e0edff;
+}
+
+#banner .content {
+    width: 20%;
+}
+
+#banner .row {
+    align-items: center;
+}
+
+#banner .content h1 {
+    font-family: var(--abril);
+    font-size: 80px;
+    line-height: 1;
+}
+
+#banner .content h1 small {
+    text-transform: capitalize;
+    display: block;
+    font-family: var(--ubuntu);
+    font-weight: 300;
+    font-size: 50px;
+}
+
+#banner .content h5 {
+    font-family: var(--ubuntu);
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 14.08px;
+    color: #8484bf;
+}
+
+#banner .content p {
+    font-family: var(--open);
+    font-weight: 400;
+    font-size: 14px;
+    padding: 17px 0px 24px;
+    text-align: justify;
+    color: #444444;
+    line-height: 1.5;
+}
+
+#banner .content a {
+    font-family: var(--ubuntu);
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 16px 20px;
+    background: #8484bf;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+#banner .content button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #8484bf;
+    border: none;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+#banner .img_of_banner {
+    width: 60%;
+    padding-top: 64px
+}
+
+/* banner section css part */
+
+/* About section css part */
+#about .row {
+    align-items: center;
+}
+
+#about .content_of_about {
+    width: 50%;
+}
+
+#about .content_of_about h2 {
+    color: #0f2f44;
+    font-family: var(--abril);
+    font-size: 32px;
+    padding-bottom: 17px;
+}
+
+#about .content_of_about h2 small {
+    font-family: var(--ubuntu);
+    font-weight: 300;
+    font-size: 14px;
+    display: flex;
+}
+
+#about .content_of_about p {
+    font-family: var(--open);
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 17px
+}
+
+#about .content_of_about ul li {
+    padding: 25px 0px 3.2px 28px;
+    font-family: var(--open);
+}
+
+#about .content_of_about a {
+    padding: 16px 20px;
+    font-family: var(--ubuntu);
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.3s linear;
+    color: #0f2f44;
+    display: inline-block;
+    margin-top: 31px;
+    margin-right: 22px;
+    box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+#about .content_of_about a:hover {
+    background: #ffc712;
+    box-shadow: 0px 7px 8px 5px rgba(255, 199, 18, 0.13);
+}
+
+#about .pic_of_aboutpart {
+    width: 50%;
+    padding-top: 100px;
+}
+
+/* About section css part */
+
+/* skill section css part */
+#skill {
+    color: #0f2f44;
+}
+
+#skill .row {
+    align-items: center;
+}
+
+#skill .skill_img {
+    width: 50%;
+    margin-top: 95px;
+    margin-bottom: 100px;
+    margin-right: 20px;
+}
+
+#skill .skill_content {
+    width: 40%;
+    text-align: right;
+}
+
+#skill .skill_content .skill_info h3 {
+    font-size: 32px;
+    font-family: var(--abril);
+}
+
+#skill .skill_content .skill_info h3 small {
+    display: block;
+    font-family: var(--ubuntu);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+#skill .skill_content .skill_info p {
+    font-family: var(--open);
+    padding-top: 15px
+}
+
+#skill .skill_item .skill_item_part {
+    padding-top: 32px;
+    align-items: center;
+}
+
+#skill .skill_item .skill_item_part .skill_item_content {
+    width: calc(100% - 80px);
+}
+
+#skill .skill_item .skill_item_part .skill_item_pic {
+    width: 80px;
+
+}
+
+#skill .skill_item .skill_item_part .skill_item_pic img {
+    border-radius: 50%;
+    margin-left: auto;
+    box-shadow: 0 0 0 10px white, 0 5px 10px 18px rgba(0, 0, 0, 0.12);
+}
+
+#skill .skill_item .skill_item_part .skill_item_content .skill_item_info {
+    justify-content: space-between;
+    padding-bottom: 11px;
+    font-family: var(--ubuntu);
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+#skill .skill_item .skill_item_part .skill_item_track {
+    background: #dddddd;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+}
+
+#skill .skill_item .skill_item_part .skill_item_track .skill_item_bar {
+    height: 10px;
+    margin-left: auto;
+    border-radius: 0 10px 10px 0;
+}
+
+/* skill section css part */
+
+/* service section css part */
+#service{
+    background: #f5f5f5;
+    padding-top: 61px;
+    padding-bottom: 100px;
+}
+#service .service_header_line{
+    text-align: center;
+    color: #0f2f44;
+
+}
+#service .service_header_line h3{
+    font-family: var(--ubuntu);
+    font-weight: 300;
+    font-size: 14px;
+}
+#service .service_header_line h2{
+    font-family: var(--abril);
+    font-size: 32px;
+}
+#service  .service_part {
+    justify-content: space-between;
+    padding-top: 55px;
+}
+#service  .service_part .service_item{
+    position: relative;
+}
+
+#service  .service_part .service_item .service_item_before_hover .service_item_icon img{
+    margin-top:62px;
+}
+#service  .service_part .service_item .service_item_before_hover .service_item_icon {
+    background: #e9e9e9;
+    padding:0px 20px 0px 20px;
+}
+    
+#service  .service_part .service_item .service_item_before_hover .service_item_content{
+    width: 267px;
+    background: #eeeeee;
+    padding: 30px 21px 33px 11px;
+    
+}
+#service  .service_part .service_item .service_item_before_hover .service_item_content h2{
+    font-family: var(--ubuntu);
+    font-size: 20px;
+    font-weight: 500;
+    color:#222222;
+}
+#service  .service_part .service_item .service_item_before_hover .service_item_content p{
+    font-family: var(--open);
+    font-size: 14px;
+    font-weight: 400;
+    color:#444444;
+}
+#service  .service_part .service_item .service_item_after_hover{
+    background: #0f2f44;
+    text-align: center;  
+    position: absolute;
+    top:0px;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    transform:scaleX(0);
+    transform-origin: left;
+}
+#service  .service_part .service_item .service_item_after_hover img{
+    margin:auto;
+    display: inline-block;
+    padding-top:30px;
+}
+#service  .service_part .service_item .service_item_after_hover h2{
+    font-family: var(--ubuntu);
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#service  .service_part .service_item .service_item_after_hover i{
+    color:#222222;
+    background: #ffc712;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    margin-top: 28px;
+}
+#service  .service_part .service_item:hover .service_item_after_hover{
+    visibility: visible;
+    opacity: 1;
+    transform:scale(1);
+
+}
+/* service section css part */
+
+/* portfolio section css part */
+
+
+#portfolio .container {
+    position: relative;
+}
+
+#portfolio .portfolio_header_part {
+    text-align: center;
+    color: #0f2f44;
+}
+
+#portfolio .portfolio_header_part h3 {
+    font-family: var(--ubuntu);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+#portfolio .portfolio_header_part h2 {
+    font-family: var(--abril);
+    font-size: 32px;
+}
+
+#portfolio .btn_for_next_blogs {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    transition: 0.3s linear;
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.15);
+}
+
+#portfolio .btn_for_next_blogs.no1 {
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-400%)
+}
+
+#portfolio .btn_for_next_blogs.no2 {
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(295%)
+}
+
+#portfolio .btn_for_next_blogs:hover {
+    background: #ffc712;
+    box-shadow: 0px 0px 50px 10px rgba(255, 199, 18, 0.15);
+}
+
+#portfolio .portfolio_item_part {
+    justify-content: space-between;
+    padding: 60px 0px;
+    text-align: center;
+}
+
+#portfolio .portfolio_item_part .portfolio_item {
+    position: relative;
+    transition: 0.4s ease-in-out;
+
+}
+
+#portfolio .portfolio_item_part .portfolio_item .portfolio_item_after_hover {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background: white;
+    padding: 27px 0px;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: 0.4s ease-in-out;
+}
+
+#portfolio .portfolio_item_part .portfolio_item .portfolio_item_after_hover p {
+    font-family: var(--ubuntu);
+    font-weight: 500;
+    font-size: 20px;
+    color: #0f2f44
+}
+
+#portfolio .portfolio_item_part .portfolio_item:hover .portfolio_item_after_hover {
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+#portfolio .portfolio_item_part .portfolio_item:hover {
+    box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.15);
+}
+
+#portfolio .btn_in_portfolio a {
+    font-family: var(--ubuntu);
+    font-weight: 300;
+    font-size: 20px;
+    padding: 17px 19px;
+    color: #0f2f44;
+    box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    transition: 0.3s linear;
+    margin-left: 530px;
+    border-radius: 5px;
+}
+
+#portfolio .btn_in_portfolio a:hover {
+    background: #ffc712;
+    box-shadow: 0px 7px 8px 5px rgba(255, 199, 18, 0.13);
+}
+
+/* portfolio section css part */
